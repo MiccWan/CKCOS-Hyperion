@@ -1,0 +1,71 @@
+// Contact
+section#contact
+  .inner
+    section
+      header.major
+        h2.chfont 我有話說
+      form(method='post', action='/response', onsubmit="return confirm('確認送出？');")
+        .field.half.first
+          label(for='name') Name
+          input#name(type='text', name='name', maxlength='20', required='')
+        .field.half
+          label(for='email') Email
+          input#email(type='text', name='email', maxlength='40', required='')
+        .field
+          label(for='message') Message ( Less than 200 letters )
+          textarea#message(name='message', rows='8', maxlength='200', required='')
+        ul.actions
+          li
+            input.special(type='submit', value='Send Message')
+          li
+            input(type='reset', value='Clear')
+    section.split
+      section
+        .contact-method
+          span.icon.alt.fa-envelope
+          h3 Email
+          p ckcos.hyperion@gmail.com
+          // <a href="mailto:ckcos.hyperion@gmail.com">ckcos.hyperion@gmail.com</a>
+      section
+        .contact-method
+          span.icon.alt.fa-phone
+          h3 Contact
+          table.chfont(border='0px', style='text-align: center')
+            tr
+              td 總&emsp;召
+              td
+                a(href='https://www.facebook.com/miguel.sun.1004') 孫語廷
+              td 0932-077-903
+            tr
+              td 公&emsp;關
+              td
+                a(href='https://www.facebook.com/profile.php?id=100008847278933') 鍾&emsp;葳
+              td 0960-002-225
+            tr
+              td 班級導師
+              td 李宗憙
+              td 0933-135-102
+      section
+        .contact-method
+          span.icon.alt.fa-home
+          h3 Address
+          span.chfont
+            | ( 10066 ) 台北市中正區南海路56號
+            br
+            | 臺北市立建國高級中學 夢紅樓2F展演廳
+// Footer
+footer#footer
+  .inner
+    ul.icons
+      li
+        a.icon.alt.fa-facebook(href='https://www.facebook.com/ckcoshyperion/')
+          span.label Facebook
+      li
+        a.icon.alt.fa-github(href='https://github.com/MiccWan/CKCOS-Hyperion')
+          span.label GitHub
+    ul.copyright
+      li &copy; CKCOS 7th
+      li
+        | Design: 
+        a(href='https://html5up.net') HTML5 UP
+        |  &nbsp;&nbsp;&nbsp;Latest update： 5/12/2017

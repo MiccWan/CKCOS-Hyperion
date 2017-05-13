@@ -1,0 +1,90 @@
+doctype html
+html
+  - var title = "Information"
+  include template/head.pug
+  body
+    // Wrapper
+    #wrapper
+      include template/nav.pug
+      // Banner
+      // Note: The "styleN" class below should match that of the header element.
+      section#banner.style5
+        .inner
+          span.image
+            img(src='/images/pic07.jpg', alt='')
+          header.major
+            h1.chfont 活動資訊
+          .content
+            p
+              | Lorem ipsum dolor sit amet nullam consequat
+              br
+              | sed veroeros. tempus adipiscing nulla.
+      // Main
+      #main
+        // One
+        section#one(style='background-color: #577EC3')
+          .inner
+            // paragragh one
+            header.major
+              h2.chfont 成發理念
+            p.chfont
+              | 建中第七屆科學班，聚集了一群熱愛科學的人。說到為何踏進科學的領域，似乎答案就遺落在記憶深處。儘管如此，我們有著明確的目標，興奮地度過一起瘋狂的每一天，因為思考與研究帶給我們最純粹的快樂。科學是奇妙的熔爐，融合著不同想法與背景的人，包括你們與我們。科學的廣大如同宇宙，我們恣意穿梭。航行的方向隨著問題不斷改變，直到抵達夢想的星球。
+              br
+              | Hyperion，這一首古代希臘詩人葉慈所撰寫的史詩，後來被小說家寫成一部動人心弦的科幻小說，海伯利昂。而這段氣勢磅礡的太空史詩，與我們在科學的宇宙中航行的故事，是如此的神似。
+              br
+              | 科學是我們的信仰，也是我們會用盡全力去完成的目標，我們就是向科學致敬的朝聖者。我們虔誠仰望星空，思緒飛翔在天際，直到美麗的夜空帶給我們的答案，落在一顆叫做Hyperion的星...... －《Hyperion》建國中學第七屆科學班成果發表會
+            hr
+            // paragragh two
+            header.major
+              h2.chfont 故事背景
+            p.chfont
+              | 你期待在最美的宇宙中航行嗎?
+              br
+              br
+              | 距今相當遙遠的未來，人類可以在宇宙中快速往返。然而人類與仇敵的對峙，讓宇宙中一顆名為海伯利昂的星變得無比重要。這時各有著不同故事的幾個人被選為朝聖者前往海伯利昂探尋宇宙力量的根源。究竟為何人類會走向毀滅，而在最後的選擇前我們是否會選擇合作與改變? 究竟最後我們要面對的是什麼樣的敵人?我們是否能利用所學去破解那些解不完的難題?
+              br
+              br
+              | 航行於科學的宇宙，找到答案前，我們不須回頭。但是我們要尊敬，我們航行的那片宇宙。
+              br
+              br
+              | Remember, remember 
+              br
+              | 五月二十二
+              br
+              | 只要你手上握有科學的鑰匙
+              br
+              | 海伯利昂的大門就為你而開
+              br
+            hr
+            // paragragh three
+            header.major
+              h2.chfont 班導的話
+            p.chfont
+              | 　　記得是在高二上學期期末的某次班會課時，同學們選出了「成發總召和副召」，此時「建中第七屆科學班專題研究成果發表會」就開始進入籌備階段。等到確定成發主題「Hyperion」、成發日期、工作分組，同學們才真正啟動這個號稱是科學班最重要的活動。隨著日期的漸漸逼近，我可以感受到「成發」這兩個字帶給同學的壓力和焦慮是與日俱增的。焦慮的是有些同學的專題研究進展不順利，探索研究的結果不如預期，另一方面也擔憂著繁雜的成發工作進度的落後。這不是一場考試或比賽，不分名次，也沒有勝負，理應可以輕鬆面對，但似乎不是如此。
+              br
+              | 　　「成發日」之前我們可以有彩排，可以有練習。但是，當來賓們走進夢紅樓的會議廳時，不管我們是否已經準備好了，我們都將上台，也必須將這些日子來所做的專題研究或心得，與友校的同學們分享和交流。更重要的是，我們要讓所有人感受到「建中第七屆科學班」的30位同學，齊心協力共同完成的「Hyperion」。感謝校長，教務處蔡哲銘主任，科學班林信安主任，特教組沈容伊組長，曾郁雯助理，您們的協助與幫忙，才能讓本班的「專題研究成果發表會」順利進行。感謝「建中第七屆科學班」的所有家長們，您們願意幫助孩子去完成他們的理想和抱負，您們的支持與鼓勵就是給我們師生最好的肯定。再次感謝所有參加「Hyperion」的貴賓們，也期盼給予我們更多的建議與指正。－導師 李宗憙老師
+
+            hr
+            // paragragh three
+            header.major
+              h2.chfont Something else
+            p
+              | Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.
+      include template/footer.pug
+    // Scripts
+    script(src='/assets/js/jquery.min.js')
+    script(src='/assets/js/jquery.scrolly.min.js')
+    script(src='/assets/js/jquery.scrollex.min.js')
+    script(src='/assets/js/skel.min.js')
+    script(src='/assets/js/util.js')
+    script(src='/assets/js/main.js')
+    script(type='text/javascript').
+      console.log("點開這裡想做什麼www");
+      console.log("不要亂來喔www");
+      console.log("我知道寫得很爛laaaaa");
+      console.log("可是HTML5up好棒");
+      console.log("都發現彩蛋了不給認識個嗎(? 也可以給我個flag就好www");
+      console.log("Contact:");
+      console.log("萬俊彥 Micc https://www.facebook.com/micc.wan.96");
+      console.log("{flag: 'Ender's Game'}");
+      console.log("祝你有個美好的一天(?");

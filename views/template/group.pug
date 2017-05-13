@@ -1,0 +1,21 @@
+block declare
+doctype html
+html
+  include head.pug
+  body
+    // Wrapper
+    #wrapper
+      include nav.pug
+      // Main
+      #main.alt
+        // One
+        section#one
+          .inner
+            header.major
+              h2.chfont #{project_name}
+            span.image.main
+              img(src=project_img, alt='')
+            hr.major
+            block intro            
+      include footer.pug
+  include js.pug

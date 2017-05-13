@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+	title 訊息回覆成功！！
+	meta(charset='utf-8')
+	meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+	link(rel="icon", type="image/png", sizes="96x96", href="/images/favicon-96x96.png")
+	link(rel="stylesheet", href="/assets/css/custom.css")
+	link(rel="stylesheet", href="/assets/css/main.css")
+  body
+    // Wrapper
+    #wrapper
+      include template/nav.pug
+      // Main
+      #main.alt
+    	section#one
+          .inner
+            h1.chfont 訊息已經傳送，感謝您的回饋！！
+            ul.actions
+              li
+                a.button.chfont.next(href='/') 返回首頁
+      include template/footer.pug

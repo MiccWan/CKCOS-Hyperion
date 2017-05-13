@@ -1,0 +1,88 @@
+doctype html
+html
+  include template/head.pug
+  body
+    // Wrapper
+    #wrapper
+      include template/nav.pug
+      // Banner
+      section#banner.major
+        .inner
+          header.major
+            h1.chfont
+              | 《 Hyperion 》
+              br
+              | 建中第七屆科學班成果發表
+          .content
+            p.chfont(style='font-size: 0.9em')
+              | 想看看更多專題嗎 學Pusheen叫一聲就讓你看
+              br
+              | (其實Pusheen不會叫(#
+            ul.actions
+              li
+                a.button.next.scrolly(href='#one') More 
+      // Main
+      #main
+        // One
+        section#one.tiles
+          article
+            span.image
+              img(src='/images/index_math.jpg', alt='')
+            header.major
+              h3
+                a.link(href='/project/math') Math
+              p.chfont.small 探索極致的暴力美學
+          article
+            span.image
+              img(src='/images/index_physics.jpg', alt='')
+            header.major
+              h3
+                a.link(href='/project/physics') Physics
+              p.chfont.small 喝養樂多前先對容器容量積分
+          article
+            span.image
+              img(src='/images/index_chemistry.jpg', alt='')
+            header.major
+              h3
+                a.link(href='/project/chemistry') Chemistry
+              p.chfont.small 我打破的燒杯比你吃過的土還多
+          article
+            span.image
+              img(src='/images/index_biology.jpg', alt='')
+            header.major
+              h3
+                a.link(href='/project/biology') Biology
+              p.chfont.small 想被解剖嗎
+          article
+            span.image
+              img(src='/images/index_earth_science.jpg', alt='')
+            header.major
+              h3
+                a.link(href='/project/earth_science') Earth Science
+              p.chfont.small 原來外太空有這麼多人造衛星
+          article
+            span.image
+              img(src='/images/index_information.jpg', alt='')
+            header.major
+              h3
+                a.link(href='/project/information_technology') Information
+              p.chfont.small 想被貓貓OS嗎
+        // Two
+        section#two
+          .inner
+            header.major
+              h2.chfont 更多資訊
+            p.chfont
+              | 建中第七屆科學班，聚集了一群熱愛科學的人。說到為何踏進科學的領域，似乎答案就遺落在記憶深處。儘管如此，我們有著明確的目標，興奮地度過一起瘋狂的每一天，因為思考與研究帶給我們最純粹的快樂。科學是奇妙的熔爐，融合著不同想法與背景的人，包括你們與我們。科學的廣大如同宇宙，我們恣意穿梭。航行的方向隨著問題不斷改變，直到抵達夢想的星球。
+              br
+              | Hyperion，這一首古代希臘詩人葉慈所撰寫的史詩，後來被小說家寫成一部動人心弦的科幻小說，海伯利昂。而這段氣勢磅礡的太空史詩，與我們在科學的宇宙中航行的故事，是如此的神似。
+              br
+              | 科學是我們的信仰，也是我們會用盡全力去完成的目標，我們就是向科學致敬的朝聖者。我們虔誠仰望星空，思緒飛翔在天際，直到美麗的夜空帶給我們的答案，落在一顆叫做Hyperion的星......
+              | －《Hyperion》建國中學第七屆科學班成果發表會
+            ul.actions
+              li
+                a.button.next(href='/information') Read More
+      include template/footer.pug
+  - var log = true
+  include template/js.pug
+  

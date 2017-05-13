@@ -1,0 +1,62 @@
+block declare
+mixin group(name, author, intro, img_href, intro_href)
+  section
+    a.image(href=intro_href)
+      img(src=img_href, alt='', data-position='center center')
+    .content
+      .inner
+        header.major
+          h3 #{name}  
+            font(style="font-size: 0.8em") By #{author}
+        p #{intro}
+        ul.actions
+          li
+            a.button(href=intro_href) Learn more
+doctype html
+html
+  include head.pug
+  body
+    // Wrapper
+    #wrapper
+      include nav.pug
+      // Banner
+      // Note: The "styleN" class below should match that of the header element.
+      section#banner.style2
+        .inner
+          span.image.small
+            img(src='/images/pic07.jpg', alt='')
+          header.major
+            h1
+              font.chfont #{ch_subject}
+              | &nbsp;&nbsp;#{en_subject}
+          .content
+            p.chfont.small
+              block quote
+      // Main
+      #main
+        // One
+        section#one
+          .inner
+            header.major
+              h2.chfont #{ch_subject}組成員
+            span.image.fit
+              img(src=subject_img)
+            p.chfont
+              block intro
+        // Two
+        section#two.spotlights
+          each gp in group_list
+            +group(gp.name, gp.author, gp.intro, gp.img_href, gp.intro_href)
+        // Three
+        section#three
+          .inner
+            header.major
+              block something
+            p
+              block someword
+            ul.actions
+              li
+                a.button.next(href='/') Back to home
+
+      include footer.pug
+  include js.pug
