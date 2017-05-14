@@ -33,7 +33,6 @@ if (!fs.existsSync(__dirname + '/response')){
 app.use(bodyParser.urlencoded({extended: true}))
 app.use('/templates',express.static(__dirname + '/pages/templates'))
 app.use('/assets', express.static(__dirname + '/assets'))
-app.use('/project',express.static(__dirname + '/pages/project'))
 app.use('/images',express.static(__dirname + '/images'))
 
 // Set view engine
