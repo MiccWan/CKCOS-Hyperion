@@ -1,5 +1,5 @@
 block declare
-mixin group(name, author, intro, img_href, intro_href, group_id)
+mixin group(name, author, intro, img_href, intro_href)
   section
     a.image(href=group_id+'/'+intro_href)
       img(src=img_href, alt='', data-position='center center')
@@ -30,7 +30,7 @@ html
               font.chfont #{ch_subject}
               | &nbsp;&nbsp;#{en_subject}
           .content
-            p.chfont.small
+            p.chfont.small(style="text-transform:none")
               block quote
       // Main
       #main
@@ -46,7 +46,7 @@ html
         // Two
         section#two.spotlights
           each gp in group_list
-            +group(gp.name, gp.author, gp.intro, gp.img_href, gp.intro_href, id)
+            +group(gp.name, gp.author, gp.intro, gp.img_href, gp.intro_href)
         // Three
         section#three
           .inner
