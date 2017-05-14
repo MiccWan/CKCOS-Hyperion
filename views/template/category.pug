@@ -1,7 +1,7 @@
 block declare
-mixin group(name, author, intro, img_href, intro_href)
+mixin group(name, author, intro, img_href, intro_href, group_id)
   section
-    a.image(href=intro_href)
+    a.image(href=group_id+'/'+intro_href)
       img(src=img_href, alt='', data-position='center center')
     .content
       .inner
@@ -11,7 +11,7 @@ mixin group(name, author, intro, img_href, intro_href)
         p #{intro}
         ul.actions
           li
-            a.button(href=intro_href) Learn more
+            a.button(href=group_id+'/'+intro_href) Learn more
 doctype html
 html
   include head.pug
@@ -46,7 +46,7 @@ html
         // Two
         section#two.spotlights
           each gp in group_list
-            +group(gp.name, gp.author, gp.intro, gp.img_href, gp.intro_href)
+            +group(gp.name, gp.author, gp.intro, gp.img_href, gp.intro_href, id)
         // Three
         section#three
           .inner
