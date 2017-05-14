@@ -6,12 +6,12 @@ mixin group(name, author, intro, img_href, intro_href, group_id)
     .content
       .inner
         header.major
-          h3 #{name}  
+          h3.chfont #{name}  
             font(style="font-size: 0.8em") By #{author}
-        p #{intro}
+        p.chfont #{intro}
         ul.actions
           li
-            a.button(href=group_id+'/'+intro_href) Learn more
+            a.button(href='/project/' + en_subject.toLowerCase() + '/' + intro_href) Learn more
 doctype html
 html
   include head.pug
