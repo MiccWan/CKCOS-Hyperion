@@ -1,0 +1,51 @@
+extends ../../template/group.pug
+    
+block declare
+    - var project_name = "仿生尾鰭擺動之流體結構分析"
+    - var author = "陳君輔、王德宇"
+    - var project_img = "/images/project/P1.jpg"
+
+block intro
+    .row(class='200%')
+        div(class="1u")
+            | 　
+        div(class="10u")
+            p.chfont 　　傳統以螺旋槳等方式推進的效率遠不及魚類運用魚尾擺動產生渦旋與後噴流來推進。因此本研究運用仿生學概念，結合3D列印和伺服馬達模擬尾鰭擺動，透過流場可視化技術(PIV)分析流場，研究尾鰭擺動式推進的流場結構和高效率推進機制，以期幫助我們了解魚尾的推進機構，以助機械魚等無人水下載具研發。
+            p 
+                strong.chfont 詳細說明：
+                br
+                | 　　一、製作仿生尾鰭。透過
+                strong.chfont 3D列印
+                | 做出的模型具有實驗高度重現性，也更能量化調控形狀參數(如展弦比等)及擺動參數(如擺速、擺幅等)，逐一細部探討其對流場結構、推進力的影響。
+                br
+                | 　　二、
+                strong.chfont 粒子影像測速法(PIV)
+                | 。在待測流場(水)中撒布懸浮粒子(木屑)，以光頁(以狹縫製造出的發亮平面)拍攝出不同截面下粒子的二維移動軌跡，以PIVLab軟體分析統整出流場的二維及三維結構。
+            p(style="text-align:center")
+                em.font PIV運作示意圖
+            span.image.main
+                img(src="/images/project/P1/1.jpg", alt="")
+            p(style="text-align:center")
+                em.font PIVLab在不同方位的拍攝結果
+            .row(class='200%')
+                div(class="6u")
+                    span.image.main
+                        img(src="/images/project/P1/2.jpg", alt="")
+                div(class="6u$")
+                    span.image.main
+                        img(src="/images/project/P1/3.jpg", alt="")
+            p 　　三、流場分析。
+                strong.chfont 渦旋環衝量理論(vortex-ring model)
+                | 假設魚游動產生的動量全包含在尾鰭產生的渦旋當中。藉由拍攝結果計算渦旋所含動量(渦旋有特殊的動量定義)對尾鰭造成的時均力，可比較不同變因下尾鰭的推進力差異。
+            strong.chfont 研究結果：
+            p.chfont 　　一、尾鰭每擺動半次會產生一個立體的渦旋環(vortex-ring)結構。如下左圖。
+                br
+                | 　　二、針對不同尾鰭形狀與擺動頻率進行分析，發現不同形狀到某一特定頻率值推進效果最佳。如下右圖。
+            .row(class='200%')
+                div(class="6u")
+                    span.image.main
+                        img(src="/images/project/P1/4.jpg", alt="")
+                div(class="6u$")
+                    span.image.main
+                        img(src="/images/project/P1/5.jpg", alt="")
+        div(class='1u$')
