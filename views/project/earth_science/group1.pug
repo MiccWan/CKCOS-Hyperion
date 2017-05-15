@@ -1,0 +1,19 @@
+extends ../../template/group.pug
+    
+block declare
+    - var project_name = "利用線上巡天資料庫探討鄰近太陽系三星團之間關聯"
+    - var author = "施瑋庭"
+    - var project_img = "/images/project/E1.jpg"
+
+block intro
+    .row(class='200%')
+        div(class="1u")
+            | 　
+        div(class="10u")
+            p.chfont 　　本研究目的為利用線上資料庫及等年齡線討論鄰近太陽系三星團的成員星數目、質量，以及利用動力學討論三者間的關聯以及是否有相同的起源。
+            p.chfont 　　本研究首先利用PPMXL資料庫取得的數據先經過自行量初步篩選出成員星，再利用這些成員星繪出星色星等圖，並與PADOVA中的等年齡線理論模型做比對及擬合，繼而篩選星團成員星並計算星團質量。接著利用銀道座標了解三個星團之相對位置及分佈，並簡化星團繞行銀河系的模型，利用簡諧運動計算星團繞銀河系的週期，再根據之前計算而得的質量，求得之間的相對運動。
+            p.chfont 　　目前的研究成果中主要包含兩項，一為利用等年齡線擬合，分別在昴宿星團、畢宿星團、鬼宿星團篩選出571顆、2640顆、937顆成員星，並發現其星團質量與年齡呈正相關；二為利用天體動力學探討三星團的相對位置，並利用星團之間距離初步判斷它們的起源並無直接關聯。
+            span.image.main
+                img(src="/images/project/E1/1.jpg", alt="")
+            p(style="text-align:center") 昴宿星團的星色星等圖及等年齡線擬合
+        div(class='1u$')
