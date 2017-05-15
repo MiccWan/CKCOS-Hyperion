@@ -1,0 +1,26 @@
+extends ../../template/group.pug
+    
+block declare
+    - var project_name = "探討mTLR7基因與Znrf1蛋白對HEK-293T細胞免疫機制的反應途徑"
+    - var author = "林瀚、孫語廷"
+    - var project_img = "/images/project/B1.jpg"
+
+block intro
+    .row(class='200%')
+        div(class="1u")
+            | 　
+        div(class="10u")
+            p.chfont 　　類鐸受體(Toll-like receptor，簡稱TLR)是I型跨膜蛋白質，是哺乳類免疫系統中相當重要的受體，與發炎反應的調控息息相關，主要的功能是偵測外來病原菌的入侵。一旦偵測到有病原菌入侵，TLR會啟動訊息傳導而活化先天性免疫系統，進而影響到後天獲得的免疫力。
+            p.chfont 　　類鐸受體是模式識別受體（pattern recognition receptor，PRR）的一類，識別與宿主不同的病原體分子。這些分子被統稱為病原相關分子模式（pathogen-associated molecular pattern，PAMP），也就是透過識別非宿主的分子以引發免疫反應。
+            p.chfont 　　目前我們知道不同的TLR在偵測外來病原菌上有不同的功能，不同種的TLR進行調控的方式、位置與路徑都不盡相同，本次實驗是挑選了TLR7來進行實驗與觀察，TLR7是屬於辨識病毒的類鐸受體，並且能引發發炎反應。
+            p.chfont 　　實驗的方法是將目標基因接於螢光載體，再轉染至HEK-293T細胞中，接著用西方墨點法(Western blot)測定蛋白質的表現量，以及用免疫螢光染色法(Immunofluorescence, IF）觀察此基因在細胞中的活躍路徑。
+            p.chfont 　　未來展望期能透過了解TLR7在細胞中的反應位置與機制，以協助治療罹患免疫相關疾病之病患，例如有些病人遭到病原體感染，會引發過度的發炎反應，因此若能設計出調控TLR受體表現的新藥物，使身體不致過度發炎，病況將可望獲得改善。
+            span.image.main
+                img(src="/images/project/B1/1.jpg", alt="")
+            p(style="text-align:center")
+                em.font 透過簡表了解不同TLR的作用對象
+            span.image.main
+                img(src="/images/project/B1/2.jpg", alt="")
+            p(style="text-align:center")
+                em.font 整體架構流程圖
+        div(class='1u$')
