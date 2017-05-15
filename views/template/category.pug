@@ -5,8 +5,8 @@ mixin group(name, author, intro, img_href, intro_href)
       img(src=img_href, alt='', data-position='center center')
     .content
       .inner
-        header.major
-          h3.chfont #{name}  
+        header.major(style="width:initial")
+          h3.chfont #{name}
             font(style="font-size: 0.8em") By #{author}
         p.chfont #{intro}
         ul.actions
