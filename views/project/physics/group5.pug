@@ -1,0 +1,17 @@
+extends ../../template/group.pug
+    
+block declare
+    - var project_name = "熱的平衡與傳導"
+    - var author = "鍾尚軒"
+    - var project_img = "/images/project/P5.jpg"
+
+block intro
+    .row(class='200%')
+        div(class="1u")
+            | 　
+        div(class="10u")
+            p.chfont 　　本研究主要探討熱的各種傳播以及平衡機制。當熱量在不同邊界條件(如：杯壁絕熱、不同介質介面的接合、與熱庫接觸等)下進行傳遞時，會展現許多不同的行為(如：透射、反射、擴散、干涉)。本研究將由python數值模擬以及傅立葉熱傳導和牛頓冷卻定律兩種分析方法，探討這些行為背後的物理機制以及滿足的方程式。以上提及的熱傳播雖然基本，但能解釋一些日常生活中的現象以及在天文學、工程學、生物科技上更廣泛的應用。
+            p.chfont 　　本研究首先探討液體在空氣中冷卻的參數，再進而以頻率響應探討溫度波在單一介質當中的傳遞，爾後討論多介質當中的傳遞。將來欲用其結果來設計保溫瓶、改善工廠設計、建立大氣熱傳導模型和探討雷射醫療的效果等。研究模型示意圖如下所示。
+            span.image.main
+                img(src="/images/project/P5/1.jpg", alt="")
+        div(class='1u$')
