@@ -21,7 +21,7 @@ html
       include nav.pug
       // Banner
       // Note: The "styleN" class below should match that of the header element.
-      section#banner.style2
+      section#banner(class=style)
         .inner
           span.image.small
             img(src='/images/pic07.jpg', alt='')
@@ -51,9 +51,7 @@ html
         section#three
           .inner
             header.major
-              block something
-            p
-              block someword
+              h2.chfont 返回首頁
             ul.actions
               li
                 a.button.next(href='/') Back to home
