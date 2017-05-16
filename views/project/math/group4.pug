@@ -4,33 +4,29 @@ block declare
     - var project_name = "格子填不填？"
     - var author = "劉仟璽、鄭澈"
     - var project_img = "/images/project/M4.jpg"
+    - var en_subject = "math"
 
 block intro
-    .row(class='200%')
-        div(class="1u")
-            | 　
-        div(class="10u")
-            p.chfont 　　本研究起源於一道2016歐洲女子數學奧林匹亞(EGMO)的組合問題。原題建立在特定邊長的正方形上，如下：
-            em.font 　　在一個 4m×4m 的正方形方陣中，若兩個方格位於同一行或同一列，則稱它們是相關的。每個方格與自身均不相關。現將其中一些方格塗成藍色，使得每一方格至少與兩個以上的藍色方格相關。試問最少須將多少方格塗成藍色？
-            p.chfont 　　解答同時給出了對任意整數邊長的正方形之證明。我們把這個問題推廣到兩個方向——三角形和立方體。在兩個情形中，我們都先經由計數得出上下界，並透過程式的輔助，觀察每邊個數較小的情形，並進一步在三角形的情形中獲得了不錯的構造。
-            strong.chfont 1. 三角形
-            p.chfont 　　　在每邊包含n個點的正三角形中，定義與三邊平行的方向上之各點彼此相關（下圖）。
-            span.image.main
-                img(src="/images/project/M4/1.jpg", alt="")
-            strong.chfont 　程式窮舉與構造：
-            p.chfont 　　我們接著嘗試以程式窮舉，找出在數字較小時的最小塗色點數與一種可行填法。我們在觀察由程式獲得的結果後提出了構造，所需塗色點數如下：
-            span.image.main
-                img(src="/images/project/M4/2.jpg", alt="")
-            strong.font 2. 立方體
-            br
-            p.chfont
-                strong.chfont 　目標：
-                br
-                | 　　在正方體時，我們將目標定為使每一個方塊與至少三個方塊相關。
-                br
-                strong.chfont 　程式嘗試結果：
-                br
-                | 　　由於立方體方塊數成長過快，我們直接嘗試以程式獲得n=3的最小塗色方塊填法，其中一種塗法如下，共使用15個方塊，較下界多1。在n≥4時則未能由程式得出結果。
-            span.image.main
-                img(src="/images/project/M4/3.jpg", alt="")
-        div(class='1u$')
+    p.chfont 　　本研究起源於一道2016歐洲女子數學奧林匹亞(EGMO)的組合問題。原題建立在特定邊長的正方形上，如下：
+    em.font 　　在一個 4m×4m 的正方形方陣中，若兩個方格位於同一行或同一列，則稱它們是相關的。每個方格與自身均不相關。現將其中一些方格塗成藍色，使得每一方格至少與兩個以上的藍色方格相關。試問最少須將多少方格塗成藍色？
+    p.chfont 　　解答同時給出了對任意整數邊長的正方形之證明。我們把這個問題推廣到兩個方向——三角形和立方體。在兩個情形中，我們都先經由計數得出上下界，並透過程式的輔助，觀察每邊個數較小的情形，並進一步在三角形的情形中獲得了不錯的構造。
+    strong.chfont 1. 三角形
+    p.chfont 　　　在每邊包含n個點的正三角形中，定義與三邊平行的方向上之各點彼此相關（下圖）。
+    span.image.main
+        img(src="/images/project/M4/1.jpg", alt="")
+    strong.chfont 　程式窮舉與構造：
+    p.chfont 　　我們接著嘗試以程式窮舉，找出在數字較小時的最小塗色點數與一種可行填法。我們在觀察由程式獲得的結果後提出了構造，所需塗色點數如下：
+    span.image.main
+        img(src="/images/project/M4/2.jpg", alt="")
+    strong.font 2. 立方體
+    br
+    p.chfont
+        strong.chfont 　目標：
+        br
+        | 　　在正方體時，我們將目標定為使每一個方塊與至少三個方塊相關。
+        br
+        strong.chfont 　程式嘗試結果：
+        br
+        | 　　由於立方體方塊數成長過快，我們直接嘗試以程式獲得n=3的最小塗色方塊填法，其中一種塗法如下，共使用15個方塊，較下界多1。在n≥4時則未能由程式得出結果。
+    span.image.main
+        img(src="/images/project/M4/3.jpg", alt="")

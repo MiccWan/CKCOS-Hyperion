@@ -4,51 +4,43 @@ block declare
     - var project_name = "心的起源 - 由三角形三特殊點求出該三角形"
     - var author = "蔡子暘、吳雨翰"
     - var project_img = "/images/project/M2.jpg"
+    - var en_subject = "math"
 
 block intro
+    p.chfont 　　在幾何題目中，三角形的重心、垂心和內心是常出現的重要特殊點，因此我們便開始尋找是否能由給定重心、垂心、內心來找尋原三角形的方法。之後我們更好奇其他特殊點是否也可以找到，於是便以一份網路上的論文為出發點，試著給出特定特殊點組尋求原三角形的方式。我們將其分成以下四種：
+    p.chfont
+        | 　　一、兩頂點和一特殊點
+        br
+        | 　　二、一頂點和兩特殊點
+        br
+        | 　　三、三循環特殊點
+        br
+        | 　　四、其他各種特殊點
+    p.chfont 在各個分類中，分別有以下結果：
+    p.chfont 　　一、兩頂點和一特殊點
+        br
+        | 　　　　(B, C, I)、(B, C, I#[sub A])、(B, C, I#[sub B])、(B, C, G)、(B, C, H)、(B, C, 對A/B的偽內切圓切點)、(B, C, AC/BC邊上旁/內切圓切點)、(B, C, O)、(B, C, N)、(B, C, Fe)。
     .row(class='200%')
-        div(class="1u")
-            | 　
-        div(class="10u")
-            p.chfont 　　在幾何題目中，三角形的重心、垂心和內心是常出現的重要特殊點，因此我們便開始尋找是否能由給定重心、垂心、內心來找尋原三角形的方法。之後我們更好奇其他特殊點是否也可以找到，於是便以一份網路上的論文為出發點，試著給出特定特殊點組尋求原三角形的方式。我們將其分成以下四種：
-            p.chfont
-                | 　　一、兩頂點和一特殊點
-                br
-                | 　　二、一頂點和兩特殊點
-                br
-                | 　　三、三循環特殊點
-                br
-                | 　　四、其他各種特殊點
-            p.chfont 在各個分類中，分別有以下結果：
-            p.chfont 　　一、兩頂點和一特殊點
-                br
-                | 　　　　(B, C, I)、(B, C, I#[sub A])、(B, C, I#[sub B])、(B, C, G)、(B, C, H)、(B, C, 對A/B的偽內切圓切點)、(B, C, AC/BC邊上旁/內切圓切點)、(B, C, O)、(B, C, N)、(B, C, Fe)。
-            .row(class='200%')
-                div(class="6u")
-                    span.image.main
-                        img(src="/images/project/M2/1.jpg", alt="")
-                div(class="6u$")
-                    span.image.main
-                        img(src="/images/project/M2/2.jpg", alt="")
-            p.chfont(style="margin:0.1em") 　　二、一頂點和兩特殊點：
-                br
-                | 　　　　(A, G, H)、(A, I, G)、(A, I, O)、(A, I, I#[sub A])、(A, I, I#[sub B])、(A, I, Fe)。
-            .row(class='200%')
-                div(class="3u")
-                    p   
-                div(class="6u")
-                    span.image.main
-                        img(src="/images/project/M2/3.jpg", alt="")
-            p.chfont(style="margin:0.1em") 　　三、三循環特殊點：
-                br
-                | 　　　　旁心組、中點組、內切圓切點組、垂足組、弧中點組。
-            p.chfont 　　四、其他各種特殊點：
-                br
-                | 　　　　(G, H, I)、(I, I#[sub B], I#[sub C])。
-            .row(class='200%')
-                div(class="3u")
-                    p   
-                div(class="6u")
-                    span.image.main
-                        img(src="/images/project/M2/4.jpg", alt="")
-        div(class='1u$')
+        div(class="6u 12u(small)")
+            span.image.main
+                img(src="/images/project/M2/1.jpg", alt="")
+        div(class="6u$ 12u(small)")
+            span.image.main
+                img(src="/images/project/M2/2.jpg", alt="")
+    p.chfont(style="margin:0.1em") 　　二、一頂點和兩特殊點：
+        br
+        | 　　　　(A, G, H)、(A, I, G)、(A, I, O)、(A, I, I#[sub A])、(A, I, I#[sub B])、(A, I, Fe)。
+    .row(class='200%')
+        div(class="6u -3u 12u(small)")
+            span.image.main
+                img(src="/images/project/M2/3.jpg", alt="")
+    p.chfont(style="margin:0.1em") 　　三、三循環特殊點：
+        br
+        | 　　　　旁心組、中點組、內切圓切點組、垂足組、弧中點組。
+    p.chfont 　　四、其他各種特殊點：
+        br
+        | 　　　　(G, H, I)、(I, I#[sub B], I#[sub C])。
+    .row(class='200%')
+        div(class="6u -3u 12u(small)")
+            span.image.main
+                img(src="/images/project/M2/4.jpg", alt="")

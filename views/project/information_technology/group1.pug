@@ -4,42 +4,38 @@ block declare
     - var project_name = "Reinforcement Learning與Neural Network於3D賓果遊戲AI之應用"
     - var author = "萬俊彥、陳冠宇"
     - var project_img = "/images/project/I1/head.jpg"
+    - var en_subject = "information_technology"
 
 block intro
-    .row(class='200%')
-        div(class="1u")
-            | 　
-        div(class="10u")
-            p.chfont 　　機器學習（Machine Learning，ML）是一種基於人工智慧開發的技術，透過學習大量的經驗，讓電腦從中找到規律，以達成期望的訓練目標，如做出最佳決策、將數據分類等。
-            p.chfont 　　本研究所使用的Reinforcement Learning（RL）是ML的一個分支，在RL模型下，我們會告知電腦當前的狀態（State）以及可以採取的決策（Action），電腦做出決策後，它會到達新的狀態同時獲得獎勵（Reward）。我們希望讓電腦透過學習，能夠在給定的State下做出能夠使Reward最大化的Action。（圖一）
-            p.chfont 　　Neural Network（類神經網路，NN）則是透過模擬人腦神經元的運作模式建立多層神經元模型。自第一層接收原始的輸入訊息，經處理後傳遞給下一層，再經過數層的傳遞與處理，最後傳遞給輸出層輸出結果。（圖二）
-            .row(class="200%")
-                div(class="6u")
-                    span.image.main
-                        img(src="/images/project/I1/1.jpg", alt="")
-                    p(style="text-align:center")
-                        em.chfont （圖一）Reinforcement Learning
-                div(class="6u$")
-                    span.image.main
-                        img(src="/images/project/I1/2.jpg", alt="")
-                    p(style="text-align:center")
-                        em.chfont （圖二）Neural Network
-            p.chfont(style="margin-top:0.1em") 　　RL及NN是這次研究用到的兩個重要概念，但是要用ML開發AI，除了要熟悉概念之外，還需要理解並嘗試各種方法來建構模型中的函數，找出最適合的方法來使用。這次研究的目的是希望能夠開發會玩3D賓果的電腦AI，並學習、測試ML當中各式各樣的演算法。除了ML部分，另一個目標是做出網頁上的3D賓果GUI（圖形化使用者介面）（圖三），並學習架設伺服器。
-            .row(class="200%")
-                div(class="6u")
-                    a(href="https://bingo.infor.org")
-                        span.image.main
-                            img(src="/images/project/I1/3.jpg", alt="")
-                    p(style="text-align:center")
-                        em.chfont （圖三）線上 3D 賓果
-                div(class="6u$")
-                    a(href="https://github.com/TaWeiTu/InforGo") 
-                        span.image.main
-                            img(src="/images/project/I1/4.jpg", alt="")
-                    p(style="text-align:center")
-                        em.chfont （圖四）Github QR code
+    p.chfont 　　機器學習（Machine Learning，ML）是一種基於人工智慧開發的技術，透過學習大量的經驗，讓電腦從中找到規律，以達成期望的訓練目標，如做出最佳決策、將數據分類等。
+    p.chfont 　　本研究所使用的Reinforcement Learning（RL）是ML的一個分支，在RL模型下，我們會告知電腦當前的狀態（State）以及可以採取的決策（Action），電腦做出決策後，它會到達新的狀態同時獲得獎勵（Reward）。我們希望讓電腦透過學習，能夠在給定的State下做出能夠使Reward最大化的Action。（圖一）
+    p.chfont 　　Neural Network（類神經網路，NN）則是透過模擬人腦神經元的運作模式建立多層神經元模型。自第一層接收原始的輸入訊息，經處理後傳遞給下一層，再經過數層的傳遞與處理，最後傳遞給輸出層輸出結果。（圖二）
+    .row(class="200%")
+        div(class="6u 12u$(small)")
             span.image.main
-                img(src="/images/project/I1/5.jpg", alt="")
+                img(src="/images/project/I1/1.jpg", alt="")
             p(style="text-align:center")
-                em.font （圖五）Learning Model
-        div(class='1u$')
+                em.chfont （圖一）Reinforcement Learning
+        div(class="6u$ 12u$(small)")
+            span.image.main
+                img(src="/images/project/I1/2.jpg", alt="")
+            p(style="text-align:center")
+                em.chfont （圖二）Neural Network
+    p.chfont(style="margin-top:0.1em") 　　RL及NN是這次研究用到的兩個重要概念，但是要用ML開發AI，除了要熟悉概念之外，還需要理解並嘗試各種方法來建構模型中的函數，找出最適合的方法來使用。這次研究的目的是希望能夠開發會玩3D賓果的電腦AI，並學習、測試ML當中各式各樣的演算法。除了ML部分，另一個目標是做出網頁上的3D賓果GUI（圖形化使用者介面）（圖三），並學習架設伺服器。
+    .row(class="200%")
+        div(class="6u 12u$(small)")
+            a(href="https://bingo.infor.org")
+                span.image.main
+                    img(src="/images/project/I1/3.jpg", alt="")
+            p(style="text-align:center")
+                em.chfont （圖三）線上 3D 賓果
+        div(class="6u$ 12u$(small)")
+            a(href="https://github.com/TaWeiTu/InforGo") 
+                span.image.main
+                    img(src="/images/project/I1/4.jpg", alt="")
+            p(style="text-align:center")
+                em.chfont （圖四）Github QR code
+    span.image.main
+        img(src="/images/project/I1/5.jpg", alt="")
+    p(style="text-align:center")
+        em.font （圖五）Learning Model

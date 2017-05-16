@@ -11,20 +11,22 @@ html
         // One
         section#one
           .inner
-            header.major
+            header.major(style="width:initial")
               h2.chfont !{project_name}&nbsp;
                 font(style="font-size: 0.8em") By #{author}
             span.image.main
               img(src=project_img, alt='')
             hr.major
-            block intro
+            .row(class="200%")
+              div(class="10u -1u 12u(small)")
+                block intro
         // Two
         section#two(style="background-color: rgb(42, 47, 74)")
           .inner
             header.major
-              h2.chfont 返回首頁
+              h2.chfont 返回組別目錄
             ul.actions
               li
-                a.button.next(href='/') Back to home
+                a.button.next(href="/project/"+en_subject) Back to category
       include footer.pug
   include js.pug
