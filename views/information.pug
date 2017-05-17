@@ -43,8 +43,14 @@ html
         section#two(style='background-color: rgb(51, 56, 86)')
           .inner
             header.major
+              h2.chfont 專題總表
+            include template/project_list.pug
+            header.major
               h2.chfont 活動流程
-            include template/table.pug
+            include template/time_table.pug
+            header.major
+              h2.chfont 專題報告地點
+            include template/venues.pug
         section#three(style='background-color: rgb(46, 52, 80)')
           .inner
             // paragragh two
